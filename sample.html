@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Space-Themed Fashion Store</title>
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: url('https://source.unsplash.com/1600x900/?space') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+        }
+
+        h1,
+        h2,
+        p {
+            text-align: center;
+        }
+
+        a {
+            color: #8f00ff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Navbar Styles */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.8);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .navbar ul li {
+            display: inline;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+        .navbar ul li:hover {
+            color: #8f00ff;
+        }
+
+        /* Main Content Styles */
+        main {
+            padding-top: 80px;
+            /* Adjust padding for fixed navbar */
+        }
+
+        .products-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 50px 20px;
+        }
+
+        .product-card {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+            max-width: 300px;
+            margin: 20px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .product-card h2 {
+            margin: 10px 0;
+            font-size: 20px;
+        }
+
+        .product-card p {
+            font-size: 18px;
+            color: #8f00ff;
+        }
+
+        /* Footer Styles */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.8);
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Galactic Fashion</div>
+        <ul>
+            <li>Home</li>
+            <li>Shop</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <h1>Welcome to Galactic Fashion</h1>
+        <section class="products-section">
+
+            <!-- Product 1 -->
+            <div class="product-card">
+                <img src="https://source.unsplash.com/300x300/?jacket,space" alt="Moonlight Jacket">
+                <h2>Moonlight Jacket</h2>
+                <p>$199</p>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card">
+                <img src="https://source.unsplash.com/300x300/?boots,space" alt="Starry Boots">
+                <h2>Starry Boots</h2>
+                <p>$149</p>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card">
+                <img src="https://source.unsplash.com/300x300/?sunglasses,galaxy" alt="Galaxy Sunglasses">
+                <h2>Galaxy Sunglasses</h2>
+                <p>$79</p>
+            </div>
+
+            <!-- Add more products as needed -->
+
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Galactic Fashion. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
